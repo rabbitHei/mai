@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>brand</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/brand.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <a href="#" class='pull-left'>
+            <img src="images/header_logo.png" alt=""/>
+        </a>
+        <a href="#" class='pull-right'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 头部搜索框-->
+    <div class="header-search">
+        <button class="pull-right">搜索</button>
+        <input type="search" placeholder="请输入商品名"/>
+    </div>
+    <!-- 菜单-->
+    <div class="product-list-title">
+        <a href="index.html">首页</a> >
+        <a href="category.html">全部分类</a> >
+    </div>
+    <!-- 导航-->
+    <div id="category2">
+        <h3 class="h3"></h3>
+        <div id="row">
+            <!-- tmp1-->
+        </div>
+    </div>
+    <!-- 销量排行-->
+    <div class="sell">
+        <h3 class="h3"></h3>
+        <div class="shop-content" id="shop-content">
+            <!-- tmp2-->
+        </div>
+    </div>
+    <!-- 评论-->
+    <div class="comment">
+        <h3 class="h3"></h3>
+        <div id="comment">
+            <!-- tmp3-->
+        </div>
+    </div>
+    <!--底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <ul>
+        {{each result as v i }}
+        <li>
+            <a href="productlist.html?categoryid={{v.categoryId}}&amp;pageid=1" title="{{v.brandName}}">
+                <em class="top{{+v.brandId%10+1}}">{{+v.brandId%10+1}}</em>
+                <div class="inner">
+                    <div class="tit">{{v.brandName}}</div>
+                    <p>{{v.brandInfo}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp2">
+    <ul class="clearfix" >
+        {{each result as v i}}
+        <li class="b-b">
+            {{if i==0}}
+            <b id="proId" data-id='{{v.productId}}'></b>
+            {{/if}}
+            <a href="bijia.html?productid={{v.productListId}}" class="clearfix" title="{{v.productName}}">
+                <div class="pic">
+                    {{#v.productImg}}
+                </div>
+                <div class="info clearfix">
+                    <div class="title">
+                        <p>{{v.productName}}</p>
+                        <span>{{v.productPrice}}</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall">{{v.productQuote}}&nbsp;&nbsp;{{v.productCom}}</span>
+                        <span class="chart">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp4">
+    <div class="pic">
+        {{#result[0].productImg}}
+    </div>
+    <div class="tit">{{productName}}</div>
+</script>
+<script type="text/template" id="tmp3">
+    <ul>
+        {{each result as v i }}
+        <li class="clearfix">
+            <a href="bijia.aspx?id=211698" >
+                <div class="protit">
+                    <!--<div class="pic"> <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="170"> </div>-->
+                    <!--<div class="tit">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</div>-->
+                </div>
+                <div class="plbox">
+                    <div class="name">{{v.comName}} <span class="star"><em class="star5">★★★★★</em></span><i>{{v.comTime}}</i></div>
+                    <div class="con">{{v.comContent}}</div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

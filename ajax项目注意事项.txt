@@ -1,0 +1,59 @@
+<1> 查看文档,分析ajax交互区域,确定模板区域,在模板区域实例化(最少最有效的)设置样式
+
+
+	
+<2> 查看后台数据,根据数据编写模板(后台数据样式不确定,有可能是标签字符串.如:"<img...>")
+
+<2-1> 数据能够满足模板需要
+
+<2-2> 数据不完整情况(动态添加)
+
+	动态添加:(1) href 中携带的参数=XX  可以直接使用就使用
+		
+		 (2) href 中携带参数=XX 不能直接使用->根据当前参数发送相应ajax请求,获取数据
+		
+		加入数据 data
+		
+		success:function(info){
+			info.data=data;
+			//跳转页面默认行为 在事件之后执行
+		}			
+
+
+<3> 发送ajax请求
+
+<3-1> 不传参(直接渲染)
+
+<3-2> 传参(根据文档添加参数)
+
+<3-3> a标签跳转+传参!!! -- location.href  location.search
+
+	为方便获取使用参数 不建议用数组存储 使用对象
+	
+	var arr= window.location.search.slice(1).split('&').map(function(v){
+   		 return v.split('=');
+	});
+
+	var obj={};
+
+	arr.forEach(function(v){
+    		obj[v[0]]=decodeURI(v[1]);
+	})
+
+	//简写
+	window.location.search.slice(1).split('&').forEach(function (v) {
+    		var newArr = v.split('=');
+    		this[newArr[0]] = newArr[1];
+	}, data = {});
+
+	//跳转
+	$('a').on('click',function(){
+
+    		this.href +=('&pageid='+page);
+	})
+
+<4> 渲染 
+
+<4-1> 单层ajax ,注意dom元素的获取(ajax回调函数中)
+
+<4-2> 多层ajax嵌套 (实现模板渲染后 内部再次局部渲染)

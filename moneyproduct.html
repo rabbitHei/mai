@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>moneyproduct</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/moneyproduct.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <a href="moneyctrl.html" class='pull-left' id="back">
+            返回
+        </a>
+        <h1 class="juzhong">国内折扣</h1>
+        <a href="#" class='pull-right juzhong'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 信息模块-->
+    <div id="mian">
+        <div id="content">
+            <!-- tmp1-->
+        </div>
+        <div id="adress">
+            <!-- tmp2-->
+        </div>
+        <div class="goBuy">
+            <a href="#">前往购买</a>
+        </div>
+        <div style="text-align: center; margin: 20px 10px;">
+            <img src="images/mmbweixin2.png" style="width: 100%; height: auto;">
+        </div>
+        <div id="pinlun">
+            <!-- tmp3-->
+
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <h3>{{productName}}</h3>
+    <div class="info">
+        <span class="mall">{{productFrom}}</span> <span class="addtime" style="margin-right:4px;">{{productTime}}</span>
+        <span class="author">{{productTips}}</span>
+    </div>
+    <div class="content clearfix">
+       {{#productImgSm}}
+        <p>{{productInfo}}</p>
+        <p></p>
+        <p>{{productInfo1}}</p>
+        <p></p>
+        <p>
+           {{#productImg2}}
+        </p>
+        <p></p>
+    </div>
+</script>
+<script type="text/template" id="tmp2">
+    {{#productCity}}
+</script>
+<script type="text/template" id="tmp3">
+    {{#productComment}}
+</script>
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/moneyproduct.js"></script>
+</body>
+</html>

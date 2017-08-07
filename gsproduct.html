@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>gsproduct</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <a href="index.html" class='pull-left' id="back">
+            返回
+        </a>
+        <h1 class="juzhong">凑单品</h1>
+        <a href="#" class='pull-right juzhong'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 商品区-->
+    <div class="product">
+        <!-- 伸缩选择栏-->
+        <div class="nav">
+            <div class="filter">
+                <ul class="clearfix">
+                    <li><a href="javascript:void(0)" data-id='0' class="shop">京东<i></i></a></li>
+                    <li><a href="javascript:void(0)" data-id='0' class="area">华北<i></i></a></li>
+                    <li><a href="javascript:void(0)" data-id='0' class="price">全部价格<i></i></a></li>
+                </ul>
+            </div>
+            <!-- 3-->
+            <div class="popbox" id="shop" >
+                <!-- tmp-->
+            </div>
+            <div class="popbox" id="area">
+                <!-- tmp0-->
+            </div>
+            <div class="popbox" id="price">
+                <ul>
+                    <li class="on">
+                        <a href="javascript:void(0)">全部价格</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 商品-->
+        <div id="product">
+            <!-- tmp1-->
+        </div>
+    </div>
+
+    <!-- 底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="tmp">
+    <ul>
+        {{each result as v i }}
+        <li data-shopid="{{v.shopId}}">
+            <a href="javascript:void(0);">
+                {{v.shopName}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp0">
+    <ul>
+        {{each result as v i }}
+        <li data-areaid="{{v.areaId}}">
+            <a href="javascript:void(0)" >
+                {{v.areaName}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp1">
+    <ul id="container" class="masonry clearfix" style="position: relative;">
+        {{each result as v i }}
+        <li>
+            <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                <div class="pic"><img src="{{v.productImg}}" style="width: 174px; height: 174px;"></div>
+                <div class="title">{{v.productName}}</div>
+                <div class="other">
+                    <div class="price">{{v.productPrice}}</div>
+                    <div class="btn">去凑单</div>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

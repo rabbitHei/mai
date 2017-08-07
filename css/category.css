@@ -1,0 +1,41 @@
+#category {
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+#category #row {
+  border-radius: 5px;
+  background: #ededed;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #666;
+}
+#category #row ul {
+  border-radius: 5px;
+  overflow: hidden;
+}
+#category #row ul li a {
+  display: block;
+  padding-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+#category #row ul li ul {
+  background-color: #fff;
+  width: 100%;
+}
+#category #row ul li ul li {
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#category #row ul li ul li a {
+  display: block;
+  text-align: center;
+}

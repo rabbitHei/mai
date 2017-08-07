@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>couponproduct</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/couponproduct.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <b id="link"></b>
+        <a href="coupon.html" class='pull-left' id="back">
+            返回
+        </a>
+        <h1 class="juzhong">优惠券</h1>
+        <a href="#" class='pull-right juzhong'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 商品模块-->
+    <div class="info">
+        <!-- 提示-->
+        <div style="font-size:12px; text-align:center; color:#999; margin:8px 0px;">
+            --点餐前出示手机中的优惠券，即可享受优惠--
+        </div>
+        <!-- 优惠券-->
+        <div class="shop-content" id="shop-content">
+            <!-- tmp1-->
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!-- mask-->
+<div class="mask">
+    <a href="javascript:;" class="left juzhong">&lt;</a>
+    <a href="javascript:;" class="right juzhong">&gt;</a>
+    <div id="mask" class="juzhong">
+        <!-- tmp2-->
+    </div>
+    <span class="close">X</span>
+</div>
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <ul class="clearfix" >
+        {{each result as v i}}
+        <li class="b-b">
+            <a href="http://www.kfc.com.cn/kfccda/index.aspx" class="clearfix" txt='{{#v.couponProductImg}}' data-id='{{i}}'>
+                <div class="pic">
+                    {{#v.couponProductImg}}
+                </div>
+                <div class="info clearfix">
+                    <div class="title">
+                        <p>{{v.couponProductName}}</p>
+                        <span>{{v.couponProductPrice}}</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall">{{v.couponProductTime}}</span>
+                        <!--<span class="chart">{{v.productComCount}}</span>-->
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp2">
+    <ul>
+        {{each imgArr as v i  }}
+        <li>
+            <a href="http://www.kfc.com.cn/kfccda/index.aspx">
+                {{#v}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+</html>

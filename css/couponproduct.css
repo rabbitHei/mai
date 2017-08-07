@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.header-title {
+  position: relative;
+  background-color: #f4483e;
+}
+.header-title .pull-left {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: -10px;
+}
+.header-title h1 {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #fff;
+}
+.header-title .pull-right {
+  right: 10px;
+  width: 42px;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+}
+.header-title .pull-right img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.info {
+  background-color: #fff;
+  overflow: hidden;
+}
+.shop-content {
+  width: 100%;
+}
+.shop-content ul {
+  width: 100%;
+}
+.shop-content ul li {
+  width: 100%;
+  padding: 14px 8px;
+}
+.shop-content ul li a {
+  display: block;
+  width: 100%;
+}
+.shop-content ul li a .pic {
+  float: left;
+  width: 110px;
+}
+.shop-content ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.shop-content ul li a .info {
+  overflow: hidden;
+}
+.shop-content ul li a .info .title span {
+  display: block;
+  padding-top: 10px;
+  color: #000;
+  font-weight: bold;
+}
+.shop-content ul li a .other {
+  height: 50%;
+}
+.shop-content ul li a .other .mall {
+  font-size: 12px;
+  color: #ff9000;
+  margin-top: 10px;
+  display: block;
+}
+.shop-content ul li a .other .chart {
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.mask a {
+  font-size: 50px;
+  color: #fff;
+  top: 40%;
+  width: 50px;
+}
+.mask .left {
+  left: 20%;
+}
+.mask .right {
+  right: 20%;
+}
+.mask #mask {
+  width: 30%;
+  top: 40%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.mask #mask ul {
+  overflow: hidden;
+  width: 10000%;
+}
+.mask #mask ul li {
+  width: 1%;
+  float: left;
+}
+.mask #mask ul li a {
+  display: block;
+  width: 100%;
+}
+.mask #mask ul li a img {
+  width: 100%;
+}
+.mask .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}

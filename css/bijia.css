@@ -1,0 +1,185 @@
+.product-list-title {
+  height: 38px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+  position: relative;
+}
+.product-list-title a:last-child {
+  right: 18px;
+  height: 28px;
+  background-color: #d0d0d0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 1px 2px #888;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  overflow: hidden;
+  padding: 0 16px;
+}
+.product-bijia {
+  position: relative;
+  background-color: #fff;
+}
+.product-bijia #tmp1-1 {
+  background-color: #fff;
+  overflow: hidden;
+}
+.product-bijia #tmp1-1 .product-name {
+  text-align: center;
+  font-size: 17px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 16px;
+  height: 200px;
+}
+.product-bijia #tmp1-1 .product-img {
+  display: block;
+  width: 170px;
+  height: 170px;
+  margin: 0px auto;
+}
+.product-bijia #tmp1-1 .product-collect {
+  margin-right: 24px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.tab {
+  width: 100%;
+  margin-top: 3px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #ffbb00;
+  border-top: solid 1px #c14d00;
+  border-bottom: 1px solid #c14d00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+}
+.tab ul {
+  width: 100%;
+}
+.tab ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  height: 34px;
+  text-align: center;
+}
+.tab ul li a {
+  color: #fff;
+  display: block;
+  height: 34px;
+  width: 100%;
+}
+.tab ul li.cur {
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+.tab ul li.mtab {
+  border-left: solid 1px #c14d00;
+  border-right: solid 1px #c14d00;
+}
+.plist {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.plist a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.plist a table {
+  margin-top: 12px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.plist a table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.plist a table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.plist a table tbody tr td {
+  line-height: 22px;
+}
+.plist a table tbody tr .p_pic {
+  text-align: center;
+}
+.plist a table tbody tr .red {
+  color: #d10311;
+  text-align: right;
+  padding-right: 15px;
+}
+.plist .note {
+  font-size: 12px;
+  color: #888;
+  padding: 8px 10px;
+  line-height: 18px;
+  border-top: 1px solid #ccc;
+  margin-top: 5px;
+}
+.product-com-title {
+  border-top: 4px solid #7a7a7a;
+  margin-top: 5px;
+}
+.product-com-title div {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  overflow: hidden;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+}
+.product-com-list {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+.product-com-list #tmp2-1 {
+  background-color: #fff;
+}
+.product-com-list #tmp2-1 ul li {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+  padding-bottom: 0px;
+  line-height: 18px;
+  margin-top: 3px;
+  border-bottom: 1px solid #ccc;
+}
+.product-com-list #tmp2-1 ul li .com-content {
+  color: #000;
+  line-height: 22px;
+  padding-top: 5px;
+}
+.product-com-list .more {
+  padding: 0 8px;
+  margin-top: 16px;
+}
+.product-com-list .more a {
+  display: block;
+  height: 32px;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+}

@@ -1,0 +1,93 @@
+/* css reset ��ʽ����*/
+* {
+  padding: 0;
+  margin: 0;
+  /*���к��Ӳ��ֲ����ڼ�ģʽ*/
+  -webkit-box-sizing: border-box;
+  /* ����-webkit-�ں������� */
+  box-sizing: border-box;
+  /*ȥ���ƶ��˵���������ɫ*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*�����Ķ��� ��̥*/
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* �� �ƶ��������� �������ܻ����� ��Ӱ ���� 3dЧ��,��Ҫ����*/
+  -webkit-appearance: none;
+}
+button {
+  border: none;
+  outline: none;
+  /* �� �ƶ��������� �������ܻ����� ��Ӱ ���� 3dЧ��,��Ҫ����*/
+  -webkit-appearance: none;
+}
+/*commom css ������ʽ*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.juzhong {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.shop-title {
+  height: 35px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  position: relative;
+}
+.shop-title img {
+  width: 20px;
+  height: 20px;
+  right: 10px;
+}
+.shop-title span {
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+/* �������� */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+}
+.b-l {
+  border-left: 1px solid #ccc;
+}
+.b-r {
+  border-right: 1px solid #ccc;
+}
+.b-t {
+  border-top: 1px solid #ccc;
+}
+.b-b {
+  border-bottom: 1px solid #ccc;
+}
+.box {
+  width: 100%;
+  max-width: 640px;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+}

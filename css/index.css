@@ -1,0 +1,107 @@
+.nav {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px 0px;
+}
+.nav li {
+  float: left;
+  margin-top: 15px;
+  width: 25%;
+  text-align: center;
+}
+.nav li a {
+  display: block;
+}
+.nav li a img {
+  width: 50%;
+}
+.shop {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.shop .shop-title {
+  height: 35px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  position: relative;
+}
+.shop .shop-title img {
+  width: 20px;
+  height: 20px;
+  right: 10px;
+}
+.shop .shop-title span {
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+.shop .shop-content {
+  width: 100%;
+}
+.shop .shop-content ul {
+  width: 100%;
+}
+.shop .shop-content ul li {
+  width: 100%;
+  padding: 14px 8px;
+}
+.shop .shop-content ul li a {
+  display: block;
+  width: 100%;
+}
+.shop .shop-content ul li a .pic {
+  float: left;
+  width: 110px;
+}
+.shop .shop-content ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.shop .shop-content ul li a .info {
+  height: 100px;
+  overflow: hidden;
+}
+.shop .shop-content ul li a .info .title {
+  height: 50%;
+}
+.shop .shop-content ul li a .info .title span {
+  color: #ff9000;
+}
+.shop .shop-content ul li a .info .title p {
+  overflow: hidden;
+  height: 20px;
+}
+.shop .shop-content ul li a .other {
+  height: 50%;
+}
+.shop .shop-content ul li a .other .mall {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  display: block;
+}
+.shop .shop-content ul li a .other .chart {
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+.shop .shop-more {
+  width: 100%;
+  margin-top: 15px;
+  height: 32px;
+}
+.shop .shop-more a {
+  display: block;
+  margin: 0 auto;
+  line-height: 30px;
+  background: #F4F4F4;
+  text-decoration: none;
+  font-size: 13px;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  text-align: center;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

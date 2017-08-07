@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>baicaijia</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <b id="link"></b>
+        <a href="index.html" class='pull-left' id="back">
+            返回
+        </a>
+        <h1 class="juzhong">白菜价-淘宝内部券</h1>
+        <a href="#" class='pull-right juzhong'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- nav-->
+    <div class="nav">
+        <div id="nav">
+            <!-- tmp1-->
+        </div>
+    </div>
+    <!-- 商品区-->
+    <div class="product">
+        <!-- tmp2-->
+    </div>
+    <!-- 底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+    <!-- 底部按钮-->
+    <div class="btn">
+        <a href="#link">
+            Head
+        </a>
+    </div>
+</div>
+
+
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <ul id="uu" style='width:800px;transition: all 0.2s; transform: translateX(0px);'>
+        {{each result as v i }}
+        {{if i==0}}
+        <li class="active">
+            <a href="baicaijia.html?titleid={{v.titleId}}" >
+                {{v.title}}
+            </a>
+            {{else}}
+            <li>
+                <a href="baicaijia.html?titleid={{v.titleId}}">
+                    {{v.title}}
+                </a>
+            </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="tmp2">
+    <ul class="clearfix">
+        {{each result as v i}}
+        <li>
+            <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx" target="_blank">
+            </a>
+            <div class="pic">
+                <i></i>
+                {{#v.productImg}}
+            </div>
+            <div class="inf">
+                <div class="i">
+                    <div class="t">{{#v.productName}}</div>
+                    <div class="pr">{{#v.productPrice}}
+                    </div>
+                </div>
+                <div class="o">
+                    {{#v.productCouponRemain}}
+                    <div class="b clearfix">
+                        <div class="q">{{#v.productCoupon}}</div>
+                        <div class="g">{{#v.productHref}}</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

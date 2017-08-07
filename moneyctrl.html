@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>moneyctrl</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <a href="index.html" class='pull-left'>
+            返回
+        </a>
+        <h1 class="juzhong">省钱控 - 最新优惠</h1>
+        <a href="#" class='pull-right juzhong'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 商品区-->
+    <div class="product">
+        <div class="shop-content" id="shop-content">
+            <!-- tmp1-->
+        </div>
+        <div class="page clearfix" id="page">
+                <span class="w33">
+                    <a href="#" id="a1">上一页</a>
+                </span>
+                <span class="w33">
+                    <select id="selectPage" name="select" selected="" style="border: 1px solid #bababa; font-size: 16px; padding: 8px 15px; height: 36px">
+                        <!--<option value="1" selected="">1/3</option>-->
+                        <!--<option value="2">2/3</option>-->
+                        <!--<option value="3">3/3</option>-->
+                    </select>
+                </span>
+                <span class="w33">
+                    <a href="#" id="a2">下一页</a>
+                </span>
+        </div>
+    </div>
+
+    <!-- 底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <ul class="clearfix" >
+        {{each result as v i}}
+        <li class="b-b">
+            <a href="moneyproduct.html?productid={{v.productId}}" class="clearfix">
+                <div class="pic">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="info clearfix">
+                    <div class="title">
+                        <p>{{v.productName}}</p>
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall">{{v.productFrom}} | {{v.productTime}}</span>
+                        <span class="chart">{{v.productComCount}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/moneyctrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+.header-title {
+  position: relative;
+}
+.header-title .pull-left {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: -10px;
+}
+.header-title h1 {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #fff;
+}
+.header-title .pull-right {
+  right: 10px;
+  width: 42px;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+}
+.header-title .pull-right img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#mian {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+#mian #content {
+  padding: 10px;
+}
+#mian #content h3 {
+  margin-bottom: 15px;
+}
+#mian #content h4 {
+  color: #ff6c00;
+  display: block;
+  font-size: 15px;
+}
+#mian #content .info {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+#mian #content .content > img {
+  float: right;
+  width: 120px;
+  height: 120px;
+  margin: 12px auto auto 10px;
+}
+#mian #content .content p {
+  line-height: 24px;
+  color: #606060;
+  word-break: break-all;
+  margin: 20px 0 6px 0 ;
+  font-size: 16px;
+}
+#mian #adress #disstorck {
+  margin: 0 auto;
+  width: 150px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px;
+}
+#mian #adress #disstorck li {
+  border-bottom: 1px dotted #ccc;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+}
+#mian #adress #disstorck li a {
+  display: block;
+}
+#mian #adress #disstorck li a span {
+  display: block;
+}
+#mian #adress #disstorck li a span strong {
+  float: right;
+  color: #f27b04;
+}
+#mian .goBuy a {
+  display: block;
+  margin: 20px 10px;
+  background: #FF9000;
+  height: 30px;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+#mian #pinlun {
+  padding: 0px 15px;
+}
+#mian #pinlun .tit {
+  font-size: 16px;
+  padding: 6px 8px;
+}
+#mian #pinlun .reply {
+  padding: 6px 8px;
+}
+#mian #pinlun .reply .form {
+  border: 2px solid #ECEAE8;
+  border-radius: 2px;
+  padding: 4px 0 0 4px;
+  background-color: #fff;
+  position: relative;
+  width: 98%;
+  margin: 0px auto;
+}
+#mian #pinlun .reply .form textarea {
+  width: 100%;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+  line-height: 22px;
+  font-size: 14px;
+  outline: 0;
+  color: #666;
+  height: 68px;
+}
+#mian #pinlun .reply .form .ctrl {
+  background-color: #fbfbfb;
+  height: 36px;
+  margin-left: -4px;
+  border-top: solid 1px #f2f2f2;
+}
+#mian #pinlun .reply .form .ctrl input {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  background: #ff841d;
+  border: none;
+  border: 2px solid #ff841d;
+  border-left: none;
+  border-top: none;
+  padding: 0px;
+  width: 100px;
+  height: 39px;
+  color: #fff;
+  outline: 0;
+  border-radius: 0 0 2px 0;
+  font-size: 16px;
+  display: block;
+}
+#mian #pinlun .list ul li {
+  padding: 18px 10px;
+  background-color: #FFFFFF;
+}
+#mian #pinlun .list ul li .userimg {
+  width: 40px;
+  float: left;
+  overflow: hidden;
+}
+#mian #pinlun .list ul li .userimg img {
+  width: 40px;
+  background-position: top;
+  border-radius: 20px;
+  height: 40px;
+}
+#mian #pinlun .list ul li .con {
+  overflow: hidden;
+  padding-left: 10px;
+}
+#mian #pinlun .list ul li .con .name {
+  margin-bottom: 6px;
+  color: #2e8b01;
+  font-size: 14px;
+}
+#mian #pinlun .list ul li .con .name .username {
+  color: #5997c0;
+  font-size: 13px !important;
+  float: left;
+}
+#mian #pinlun .list ul li .con .name .time {
+  color: #999999;
+  font-size: 13px !important;
+  float: right;
+}
+#mian #pinlun .list ul li .con .content {
+  word-break: break-all;
+  font-size: 15px !important;
+  color: #606060;
+  line-height: 20px;
+}

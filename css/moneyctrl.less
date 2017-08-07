@@ -1,0 +1,113 @@
+//头部修改
+.header-title{
+  position: relative;
+  .pull-left{
+    color:#fff;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: -10px;
+  }
+  h1{
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color:#fff;
+  }
+  .pull-right{
+    right: 10px;
+    width: 42px;
+    height: 100%;
+    position: relative;
+    margin-right: 20px;
+    img{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+  }
+}
+//商品区
+.product{
+  padding-bottom: 15px;
+  background-color: #fff;
+  .shop-content{
+    width: 100%;
+    ul{
+      width: 100%;
+      li{
+        width: 100%;
+        padding: 14px 8px;
+        a{
+          display: block;
+          width: 100%;
+          .pic{
+            float: left;
+            width: 110px;
+            img{
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .info{
+            height: 100px;
+            overflow: hidden;
+            .title{
+              height: 50%;
+              span{
+                color: #ff9000;
+              }
+              p{
+                overflow: hidden;
+                height: 20px;
+              }
+            }
+          }
+          .other{
+            height: 50%;
+            .mall{
+              font-size: 12px;
+              color: #ccc;
+              margin-top: 10px;
+              display: block;
+            }
+            .chart{
+              float: right;
+              margin-right: 10px;
+              font-size: 12px;
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+  //分页
+  .page{
+    text-align: center;
+    margin-top: 10px !important;
+    .w33{
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      a{
+        box-sizing: border-box;
+        background-color: #d4d4d4;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+        border-bottom: 1px solid #bababa;
+        box-shadow: 0 0 1px #666;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 32px;
+        overflow: hidden;
+        padding: 8px 20px;
+        /* margin: 0 5px; */
+      }
+    }
+  }
+}
+

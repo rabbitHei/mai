@@ -1,0 +1,109 @@
+.header-title {
+  position: relative;
+}
+.header-title .pull-left {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: -10px;
+}
+.header-title h1 {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #fff;
+}
+.header-title .pull-right {
+  right: 10px;
+  width: 42px;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+}
+.header-title .pull-right img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.product {
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+.product .shop-content {
+  width: 100%;
+}
+.product .shop-content ul {
+  width: 100%;
+}
+.product .shop-content ul li {
+  width: 100%;
+  padding: 14px 8px;
+}
+.product .shop-content ul li a {
+  display: block;
+  width: 100%;
+}
+.product .shop-content ul li a .pic {
+  float: left;
+  width: 110px;
+}
+.product .shop-content ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.product .shop-content ul li a .info {
+  height: 100px;
+  overflow: hidden;
+}
+.product .shop-content ul li a .info .title {
+  height: 50%;
+}
+.product .shop-content ul li a .info .title span {
+  color: #ff9000;
+}
+.product .shop-content ul li a .info .title p {
+  overflow: hidden;
+  height: 20px;
+}
+.product .shop-content ul li a .other {
+  height: 50%;
+}
+.product .shop-content ul li a .other .mall {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  display: block;
+}
+.product .shop-content ul li a .other .chart {
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+.product .page {
+  text-align: center;
+  margin-top: 10px !important;
+}
+.product .page .w33 {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.product .page .w33 a {
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+  padding: 8px 20px;
+  /* margin: 0 5px; */
+}

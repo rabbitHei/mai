@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>brandTitle</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bottom.css"/>
+    <link rel="stylesheet" href="css/brandTitle.css"/>
+</head>
+<body>
+<div class="box">
+    <!-- 头部标题-->
+    <div class="header-title">
+        <a href="#" class='pull-left'>
+            <img src="images/header_logo.png" alt=""/>
+        </a>
+        <a href="#" class='pull-right'>
+            <img src="images/header_app.png" alt=""/>
+        </a>
+    </div>
+    <!-- 头部搜索框-->
+    <div class="header-search">
+        <button class="pull-right">搜索</button>
+        <input type="search" placeholder="请输入商品名"/>
+    </div>
+    <!-- 菜单-->
+    <div class="product-list-title">
+        <a href="index.html">首页</a> >
+        <a href="category.html">全部分类</a> >
+    </div>
+    <!-- 导航-->
+    <div id="category">
+        <!-- 通用标题-->
+        <div style="font-size: 16px;color:#874604;height: 40px; padding-left:10px; line-height: 40px;margin:10px 5px; border:1px solid #ccc; background-color:#eee;">热门品牌排行</div>
+        <div id="row">
+            <!-- tmp1-->
+        </div>
+    </div>
+    <!--底部-->
+    <div class="bottom">
+        <div class="service b-t b-b">
+            <a href="#">登录</a><a href="#">注册</a><a href="#">返回顶部</a>
+        </div>
+        <div class="bottom-info">
+            <p>
+                <a href="#">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                <span> -- 掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="tmp1">
+    <ul>
+        {{each result as v i}}
+        <li class='one'>
+            <a href='brand.html?brandtitleid={{v.brandTitleId}}&brand={{v.brandTitle}}' data-title-id='{{v.brandTileId}}' style='background-image:url(http://www.zuyushop.com/wap/images/arrow1.gif);'>
+                {{v.brandTitle}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/artTemplate/template.js'></script>
+<script src="js/common/ajax.js"></script>
+<script src="js/brandTitle.js"></script>
+</body>
+</html>
